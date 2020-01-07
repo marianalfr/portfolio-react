@@ -1,0 +1,22 @@
+.hero{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    padding: 20px;
+    font-family: $title-font;
+    font-size: rem(25);
+    position: relative;
+    z-index: 2;
+
+    @include media($tablet){
+        font-size: rem(40);
+        margin-top: 200px;
+        padding: 20px 50px;
+    }
+
+    &__intro{
+        width: 80%;
+        height: 230px;
+    }
+}

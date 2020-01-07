@@ -1,0 +1,27 @@
+/* MEDIA QUERIES */
+@mixin media($width){
+    @media all and (min-width: $width){
+        @content
+    }
+};
+
+/* FOOTER LINKS ANIMATION */
+
+@mixin footerLinks{
+    font-size: 0px;
+    opacity: 0;
+    transition: font-size 1s ease, transform 1s ease, opacity .5s ease;
+}
+
+@mixin footerLinksHover{
+    font-size: inherit;
+    transform: translate(0px);
+    opacity: 1;
+}
+
+@mixin footerDotHover{
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+}

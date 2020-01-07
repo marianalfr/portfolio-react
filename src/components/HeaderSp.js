@@ -1,0 +1,62 @@
+import React from 'react';
+import Logo from './Logo';
+import { Link } from 'react-router-dom'
+
+class HeaderSp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            menuOpen: false,
+            openSection: ''
+        };
+        this.toggleMenu = this.toggleMenu.bind(this);
+        this.openSection = this.openSection.bind(this);
+    };
+
+    toggleMenu(){
+        const { menuOpen } = this.state;
+
+        if(!menuOpen){
+            this.setState({
+                menuOpen: true
+            });
+        } else {
+            this.setState({
+                menuOpen: false,
+            });
+        };
+    };
+
+    openSection(event){
+        const target = event.target;
+
+        this.setState({
+            openSection: target.id
+        })
+
+        console.log(target.id);
+    }
+
+    render() {
+        return (
+            <header className="header">
+                <Link to={this.state.openSection === 'home' ? "/" : "/es/inicio"}>
+                    <div id="home" className="header__logo" onClick={this.openSection}>
+                        <Logo/>
+                    </div>
+                </Link>
+                <nav className="header__nav">
+                    <button id="btn-nav" className={`header__nav-button dots ${!this.state.menuOpen ? '' : ' on'}`} type="button" onClick={this.toggleMenu}><span></span></button>
+                    <ul id="nav" className={`header__nav-menu ${!this.state.menuOpen ? '' : ' show-menu'}`}>
+                        <Link to="/es/portfolio"><li id="portfolio" onClick={this.openSection}>Portfolio.</li></Link>
+                        <Link to="/es/sobre-mi"><li id="about" onClick={this.openSection}>Sobre mí.</li></Link>
+                        <li id="skills" onClick={this.openSection}>Habilidades.</li>
+                        <li id="contact" onClick={this.openSection}>Contacto.</li>
+                    </ul>
+                </nav>
+            </header>
+        );
+    };
+};
+
+export default HeaderSp;

@@ -1,0 +1,86 @@
+.header{
+    height: 130px;
+    position: fixed;
+    z-index: 4;
+
+    &__logo{
+        width: 171px;
+
+        @include media($tablet){
+            width: 244px;
+        }
+
+    }
+    &__nav{
+        width: 100%;
+        position: absolute;
+        top: 33px;
+        right: 0px;
+        text-align: right;
+
+        @include media($tablet){
+            top: 66px;
+            right: -25px
+        }
+
+        &-button{
+            margin-right: 20px;
+
+            @include media($tablet){
+                margin-right: 50px;
+            }
+    
+        }
+
+        &-menu{
+            width: 100%;
+            max-height: 0px;
+            overflow:hidden;
+            padding-right: 20px;
+            position: absolute;
+            top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+            font-size: rem(25);
+            line-height: rem(80);
+            font-weight: 300;
+            background-color: $color-background;
+            transition: max-height 0.5s ease;
+            z-index: 200;
+
+            @include media($tablet){
+                width: 300px;
+                padding-right: 50px;
+                font-size: rem(30);
+                line-height: rem(60);
+                position: absolute;
+                display: block;
+                right: 0px;
+            }
+
+            li{
+                transition: transform 1s ease;
+            }
+
+            li:last-child{
+                padding-bottom: 20px;
+            }
+
+            li:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .show-menu{
+            height: calc(100vh - 115px);
+            max-height: calc(100vh - 115px);
+
+            @include media($tablet){
+                height: 320px;
+                max-height: 320px;
+            }
+        }
+    }
+}

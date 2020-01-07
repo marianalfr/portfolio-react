@@ -1,0 +1,144 @@
+/* LOGO ANIMATIONS */
+
+.squiggle {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw 2s linear forwards;
+}
+
+.squiggle--1 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: draw 2s linear forwards;
+}
+
+.squiggle-2 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw 2s linear forwards;
+}
+
+.squiggle-3 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw 2s linear forwards;
+}
+  
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+  
+/* LANDING PAGE */
+
+.main__landing{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-logo{
+    width: 250px;
+
+    @include media(350px){
+      width: 300px;
+    }
+  }
+
+  .landing__language-selection{
+    margin-top: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    font-family: $title-font;
+
+    @include media(350px){
+      width: 300px;
+    }
+  }
+}
+
+/* LINKS ANIMATIONS */
+
+@keyframes down{
+  0%{
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+  80%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes left{
+  0%{
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  80%{
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes right{
+  0%{
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  80%{
+    transform: translateX(-20px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.hello-dot{
+  animation: down 2s ease forwards;
+}
+
+.hello-sp{
+  animation: left 1.5s ease both;
+  animation-delay: 1s;
+  padding-bottom: 5px;
+}
+
+.hello-sp:hover, .hello-en:hover{
+  border-bottom: solid 2px black;
+  padding-bottom: 3px;
+
+}
+
+.hello-en{
+  animation: right 1.5s ease both;
+  animation-delay: 1s;
+  padding-bottom: 5px;
+}
+
+.banner-logo{
+  position: absolute;
+  top: 50px;
+}

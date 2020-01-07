@@ -1,0 +1,50 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-background;
+    overflow: hidden;
+}
+
+.header{
+    width: 100vw;
+    padding: 20px 20px 0 20px;
+
+    @include media($tablet){
+        padding: 50px 50px 0 50px;
+    }
+}
+
+.main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.footer{
+    width: 100vw;
+    padding: 20px 37px 20px 20px;
+
+    @include media($tablet){
+        padding: 20px 50px 50px 50px;
+    }
+}
+
+.svg-logo{
+    width: 100%;
+}
+
+.hidden{
+    display: none !important;
+}

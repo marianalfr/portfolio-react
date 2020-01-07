@@ -1,0 +1,23 @@
+.about{
+    width: 90%;
+    height: calc(100vh - 220px);
+    margin-top: 180px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text{
+        width: 280px;
+        margin-right: 20px;
+
+        h2{
+            font-size: rem(18);
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        p{
+            font-family: $title-font;
+        }
+    }
+}

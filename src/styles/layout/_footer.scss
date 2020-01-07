@@ -1,0 +1,183 @@
+.footer{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 3;
+
+    &__links-mobile{
+
+        span{
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 20px;
+            margin-right: 5px;
+            background-color: black;
+
+            &:first-child{
+                animation-name: show-dot;
+                animation-duration: 1s;
+                animation-delay: 3s;
+                animation-fill-mode: both;
+            }
+
+            &:nth-child(2){
+                animation-name: show-dot;
+                animation-duration: 1s;
+                animation-delay: 4s;
+                animation-fill-mode: both;
+            }
+            
+            &:last-child{
+                animation-name: show-dot;
+                animation-duration: 1s;
+                animation-delay: 5s;
+                animation-fill-mode: both;
+            }
+        }
+
+        @include media($tablet){
+            display: none;
+        }
+    }
+
+    &__links-desktop{
+        height: 50px;
+        display: none;
+        cursor: pointer;
+
+        @include media($tablet){
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+
+        &-dots{
+
+            span{
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 20px;
+                margin-right: 9px;
+                background-color: black;
+
+                &:first-child{
+                    animation-name: show-dot;
+                    animation-duration: 1s;
+                    animation-delay: 3s;
+                    animation-fill-mode: both;
+                }
+    
+                &:nth-child(2){
+                    animation-name: show-dot;
+                    animation-duration: 1s;
+                    animation-delay: 4s;
+                    animation-fill-mode: both;
+                }
+                
+                &:last-child{
+                    animation-name: show-dot;
+                    animation-duration: 1s;
+                    animation-delay: 5s;
+                    animation-fill-mode: both;
+                }
+            }
+        }
+
+        &-links{
+
+            a i{
+                height: 10px;
+                margin-right: 15px;
+                font-size: rem(29);
+            }
+
+            .fa-envelope{
+                @include footerLinks;
+                transform: translate(0, 30px);
+            }
+
+            .fa-github-alt{
+                @include footerLinks;
+                transform: translate(-3px, 30px);
+            }
+
+            .fa-linkedin{
+                @include footerLinks;
+                transform: translate(-5px, 30px);
+            }
+        }
+
+        &:hover > &-links .fa-envelope{
+            @include footerLinksHover;
+        }
+
+        &:hover > &-links .fa-github-alt{
+            @include footerLinksHover;
+        }
+
+        &:hover > &-links .fa-linkedin{
+            @include footerLinksHover;
+        }
+
+        .footer-links{
+            @include footerLinksHover;
+        }
+
+    }
+
+    &__dot{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        z-index: 1;
+        cursor: pointer;
+
+        &-dot{
+
+            span{
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 20px;
+                background-color: black;
+                animation-name: show-dot;
+                animation-duration: 1s;
+                animation-delay: 4s;
+                animation-fill-mode: both;
+
+                @include media($tablet){
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+
+        &-photo{
+            max-width: 0px;
+            max-height: 0px;
+            border-radius: 200px;
+            background-image: url('../../images/m-l.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: max-width 1s ease, max-height 1s ease;
+        }
+
+        &:hover > &-photo{
+
+            @include media($tablet){
+                @include footerDotHover;
+            }
+        }
+
+        .footer-dot{
+
+            @include media($tablet){
+                @include footerDotHover;
+            }
+        }
+    }
+}
