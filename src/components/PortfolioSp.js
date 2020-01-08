@@ -31,19 +31,15 @@ const PortfolioSp = () => {
     };
 
     return(
-        <React.Fragment>
-            <HeaderSp />
-            <main className="main">
-                <section id="portfolio" className="portfolio">
-                    <div className="portfolio__wrapper">
-                        <ul id="project-list-es" className="portfolio__projects">
-                            {renderProjects()}
-                        </ul>
-                    </div>
-                </section>
-            </main>
-            <Footer />
-        </React.Fragment>
+        <main className="main">
+            <section id="portfolio" className="portfolio">
+                <div className="portfolio__wrapper">
+                    <ul id="project-list-es" className="portfolio__projects">
+                        {renderProjects()}
+                    </ul>
+                </div>
+            </section>
+        </main>
     );
 };
 

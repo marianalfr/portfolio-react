@@ -14,10 +14,7 @@ class MarianaSp extends React.Component{
             <React.Fragment>
                 <HeaderSp />
                 <main className="main">
-                    <Switch>
-                        <Route exact path="/es/inicio" component={HeroSp} />
-                        <Route exact path="/es/portfolio" component={PortfolioSp} />
-                    </Switch>
+                    {this.props.children}
                 </main>
                 <Footer />
             </React.Fragment>
