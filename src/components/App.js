@@ -7,7 +7,8 @@ import PortfolioSp from './PortfolioSp';
 import AboutSp from './AboutSp';
 import HeaderSp from './HeaderSp';
 import MarianaSp from './MarianaSp';
-
+import ContactSp from './ContactSp'
+;
 class App extends React.Component {
   render() {
     return (
