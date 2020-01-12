@@ -30,6 +30,10 @@ body{
     align-items: center;
     overflow: hidden;
 
+    @include media($tablet){
+        justify-content: flex-start;
+    }
+
 }
 
 .footer{
