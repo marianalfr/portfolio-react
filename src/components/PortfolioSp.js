@@ -14,10 +14,10 @@ const PortfolioSp = () => {
                     <h2 className="project__info-title">{project.name}</h2>
                     <p className="project__info-text">{project.description}</p>
                     <div className="project__info-links">
-                        <a href={project.repoLink} target="_blank">
+                        <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github-alt"></i>
                         </a>
-                        <a href={project.pagesLink} target="_blank">
+                        <a href={project.pagesLink} target="_blank" rel="noopener noreferrer">
                             <i className="fas fa-desktop"></i>
                         </a>
                     </div>

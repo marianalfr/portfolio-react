@@ -34,6 +34,8 @@ class HeaderSp extends React.Component {
             openSection: target.id
         })
 
+        this.toggleMenu();
+
         console.log(target.id);
     }
 
@@ -51,7 +53,7 @@ class HeaderSp extends React.Component {
                         <Link to="/es/portfolio"><li id="portfolio" onClick={this.openSection}>Portfolio.</li></Link>
                         <Link to="/es/sobre-mi"><li id="about" onClick={this.openSection}>Sobre mí.</li></Link>
                         <li id="skills" onClick={this.openSection}>Habilidades.</li>
-                        <li id="contact" onClick={this.openSection}>Contacto.</li>
+                        <Link to="/es/contacta"><li id="contact" onClick={this.openSection}>Contacto.</li></Link>
                     </ul>
                 </nav>
             </header>

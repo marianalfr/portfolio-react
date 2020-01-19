@@ -93,6 +93,11 @@
                 height: 10px;
                 margin-right: 15px;
                 font-size: rem(29);
+                transition: transform 1s ease;
+            }
+
+            a:hover > i{
+                transform: scale(2);
             }
 
             .fa-envelope{
