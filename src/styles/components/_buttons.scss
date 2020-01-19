@@ -101,3 +101,17 @@ button.dots {
     }
 
 }
+
+.btn-send{
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 1s ease;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
