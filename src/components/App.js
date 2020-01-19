@@ -5,7 +5,6 @@ import Landing from './Landing';
 import HeroSp from './HeroSp';
 import PortfolioSp from './PortfolioSp';
 import AboutSp from './AboutSp';
-import HeaderSp from './HeaderSp';
 import MarianaSp from './MarianaSp';
 import ContactSp from './ContactSp'
 ;
@@ -20,7 +19,7 @@ class App extends React.Component {
               <Route exact path="/es/inicio" component={HeroSp} />
               <Route exact path="/es/portfolio" component={PortfolioSp} />
               <Route exact path="/es/sobre-mi" component={AboutSp} />
-              <Route exact path="/es/contacta" component={ContactSp} />
+              <Route exact path="/es/contacto" component={ContactSp} />
             </MarianaSp>
           )} />
         </Switch>
