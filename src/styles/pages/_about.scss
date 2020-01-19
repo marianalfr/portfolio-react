@@ -1,17 +1,19 @@
 .about{
     width: 90%;
-    height: calc(100vh - 220px);
-    margin-top: 180px;
+    height: calc(100vh - 180px);
+    margin-top: 120px;
     overflow: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
     padding-left: 20px;
 
-        @include media($tablet){
-            padding-left: 50px;
-        }
+    @include media($tablet){
+        height: calc(100vh - 250px);
+        margin-top: 180px;
+        padding-left: 50px;
+        justify-content: flex-start;
+    }
 
 
     &__text{

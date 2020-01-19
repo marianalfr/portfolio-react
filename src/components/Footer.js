@@ -17,9 +17,9 @@ const Footer = () => {
                     <span></span>
                 </div>
                 <div className="footer__links-desktop-links">
-                    <a href="mailto:marianalfr@gmail.com?subject=Contacto a través de la web" target="_blank"><i className="footer-link fas fa-envelope"></i></a>
-                    <a href="https://github.com/marianalfr" target="_blank"><i className="footer-link fab fa-github-alt"></i></a>
-                    <a href="https://www.linkedin.com/in/mariana-lerma/" target="_blank"><i className="footer-link fab fa-linkedin"></i></a>
+                    <a href="mailto:marianalfr@gmail.com?subject=Contacto a través de la web" target="_blank" rel="noopener noreferrer"><i className="footer-link fas fa-envelope"></i></a>
+                    <a href="https://github.com/marianalfr" target="_blank" rel="noopener noreferrer"><i className="footer-link fab fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/mariana-lerma/" target="_blank" rel="noopener noreferrer"><i className="footer-link fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div className="footer__dot">

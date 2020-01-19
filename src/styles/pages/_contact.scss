@@ -1,0 +1,115 @@
+.contact{
+    width: 100%;
+    height: calc(100vh - 180px);
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+
+    @include media($tablet){
+        height: calc(100vh - 250px);
+        margin-top: 190px;
+        padding-left: 50px;
+        justify-content: flex-start;
+    }
+
+    &__social{
+        width: 244px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: $color-main;
+            color: $color-background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 1s ease, color 1s ease;
+
+            &:hover{
+                background-color: $color-background;
+                color: $color-main;
+            }
+
+            i{
+                transition: transform 1s ease;
+            }
+        }
+
+        a:hover > i{
+            transform: scale(1.8);
+        }
+    }
+
+    &__text{
+        font-family: $title-font;
+        margin: 30px 0px 20px 0px;
+    }
+
+    &__form{
+        margin-top: 20px;
+        width: 100%;
+        max-width: 600px;
+
+        &-details{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+            &-input{
+                width: 48%;
+                margin: 0px 0px 20px 0px;
+
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                input{
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0.37);
+                    border-bottom: 2px solid black;
+                    font-family: $title-font;
+
+                    &:focus{
+                        outline: none;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        &-text{
+            width: 90%;
+
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            textarea{
+                border: none;
+                width: 100%;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0.37);
+                border-bottom: 2px solid black;
+                font-family: $title-font;
+
+                &:focus{
+                    outline: none;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+}
