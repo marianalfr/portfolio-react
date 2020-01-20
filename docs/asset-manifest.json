@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3d895f45.chunk.css",
+    "main.js": "./static/js/main.bc3282a1.chunk.js",
+    "main.js.map": "./static/js/main.bc3282a1.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.59c71401.js",
+    "runtime-main.js.map": "./static/js/runtime-main.59c71401.js.map",
+    "static/js/2.62494a26.chunk.js": "./static/js/2.62494a26.chunk.js",
+    "static/js/2.62494a26.chunk.js.map": "./static/js/2.62494a26.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.8f4afdab71cac747d5aaa1197ff4529a.js": "./precache-manifest.8f4afdab71cac747d5aaa1197ff4529a.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.3d895f45.chunk.css.map": "./static/css/main.3d895f45.chunk.css.map",
+    "static/js/2.62494a26.chunk.js.LICENSE": "./static/js/2.62494a26.chunk.js.LICENSE",
+    "static/media/Awesome-profile-cards-Mariana-Lerma.png": "./static/media/Awesome-profile-cards-Mariana-Lerma.43c9f40f.png",
+    "static/media/Bel-And-Mums-Mariana-Lerma.png": "./static/media/Bel-And-Mums-Mariana-Lerma.e9e6b782.png",
+    "static/media/CV-Mariana-Lerma.pdf": "./static/media/CV-Mariana-Lerma.91c3ad3a.pdf",
+    "static/media/JSA-Mariana-Lerma.png": "./static/media/JSA-Mariana-Lerma.07674521.png",
+    "static/media/MB-Mariana-Lerma.png": "./static/media/MB-Mariana-Lerma.5f049f12.png",
+    "static/media/Micomoler-Mariana-Lerma.png": "./static/media/Micomoler-Mariana-Lerma.e16c13d5.png",
+    "static/media/Series-Mariana-Lerma.png": "./static/media/Series-Mariana-Lerma.6fb96229.png",
+    "static/media/Skylabers-Mariana-Lerma.png": "./static/media/Skylabers-Mariana-Lerma.5f9be498.png",
+    "static/media/Wedding-Site-Mariana-Lerma.png": "./static/media/Wedding-Site-Mariana-Lerma.676d86ec.png",
+    "static/media/close.svg": "./static/media/close.777b93c6.svg",
+    "static/media/App.scss": "./static/media/m-l.16f59bfe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59c71401.js",
+    "static/js/2.62494a26.chunk.js",
+    "static/css/main.3d895f45.chunk.css",
+    "static/js/main.bc3282a1.chunk.js"
+  ]
+}
