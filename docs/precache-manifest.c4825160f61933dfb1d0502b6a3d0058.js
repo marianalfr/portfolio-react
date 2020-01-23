@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "388a989190b977de040b8ea62bebe948",
+    "revision": "17174d0195e6442407c7d89cc0f8453d",
     "url": "./index.html"
   },
   {
-    "revision": "44264d42a48fc8459fab",
-    "url": "./static/css/main.3d895f45.chunk.css"
+    "revision": "9acdcf7c3e44894b61df",
+    "url": "./static/css/main.ddeae8f5.chunk.css"
   },
   {
-    "revision": "cad8f9b3d036393ce8b7",
-    "url": "./static/js/2.62494a26.chunk.js"
+    "revision": "727a5067a2fb51a6b7af",
+    "url": "./static/js/2.9e979a24.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "./static/js/2.62494a26.chunk.js.LICENSE"
+    "url": "./static/js/2.9e979a24.chunk.js.LICENSE"
   },
   {
-    "revision": "44264d42a48fc8459fab",
-    "url": "./static/js/main.bc3282a1.chunk.js"
+    "revision": "9acdcf7c3e44894b61df",
+    "url": "./static/js/main.e91cad86.chunk.js"
   },
   {
     "revision": "99493b6f5bfcbcbfa9dd",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "91c3ad3a2a2cb83001cf7f169dc18c37",
     "url": "./static/media/CV-Mariana-Lerma.91c3ad3a.pdf"
+  },
+  {
+    "revision": "def79a789d25efae7da23df441eef48a",
+    "url": "./static/media/Guess-the-number-Mariana-Lerma.def79a78.png"
   },
   {
     "revision": "0767452151f766c320cc3801382c14d3",
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5f9be498a980d0fc03fa7b2bd6528d4b",
     "url": "./static/media/Skylabers-Mariana-Lerma.5f9be498.png"
+  },
+  {
+    "revision": "54e6e86ec51d78c249096613a36d3b8a",
+    "url": "./static/media/Voting-App-Mariana-Lerma.54e6e86e.png"
   },
   {
     "revision": "676d86ecd32399b31282c32c979b5ed4",

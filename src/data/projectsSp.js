@@ -1,9 +1,16 @@
 const projectsSp = [
     {
+        name: "Voting App",
+        description: "Aplicación para votar la respuesta a una pregunta. Javascript, Node, Express, MongoDB, pm2 y AWS",
+        repoLink: "https://github.com/marianalfr/demo-voting-app",
+        pagesLink: "https://github.com/marianalfr/demo-voting-app",
+        image: require('../images/Voting-App-Mariana-Lerma.png')
+    },
+    {
         name: "A. Profile Cards",
         description: "Aplicación realizada en Adalab con html/sass y vanilla javascript y posterior migración a React.",
-        repoLink: "https://github.com/marianalfr/awesome-profile-cards",
-        pagesLink: "https://marianalfr.github.io/awesome-profile-cards/",
+        repoLink: "https://github.com/marianalfr/awesome-profile-cards-react",
+        pagesLink: "https://marianalfr.github.io/awesome-profile-cards-react/",
         image: require('../images/Awesome-profile-cards-Mariana-Lerma.png')
     },
     {
@@ -54,6 +61,13 @@ const projectsSp = [
         repoLink: "https://github.com/marianalfr/monica-y-boris",
         pagesLink: "https://marianalfr.github.io/monica-y-boris/",
         image: require('../images/MB-Mariana-Lerma.png')
+    },
+    {
+        name: "Adivina el número",
+        description: "Sencillo juego desarrollado con javascript como práctica en Adalab.",
+        repoLink: "https://github.com/marianalfr/guess-the-number",
+        pagesLink: "http://beta.adalab.es/evaluacion-intermedia-modulo-2-marianalfr/",
+        image: require('../images/Guess-the-number-Mariana-Lerma.png')
     }
 ];
 

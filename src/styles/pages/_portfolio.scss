@@ -18,21 +18,21 @@
         display: grid;
         justify-items: center;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(8, 185px);
+        grid-template-rows: repeat(10, 185px);
         overflow-y: auto;
 
         @include media(550px){
             height: calc(100vh - 220px);
             margin-top: 100px;
             grid-template-columns: repeat(2, 250px);
-            grid-template-rows: repeat(4, 185px);
+            grid-template-rows: repeat(5, 185px);
             overflow-x: scroll;
         }
 
         @include media($tablet){
             height: calc(100vh - 220px);
             margin-top: 220px;
-            grid-template-columns: repeat(4, 250px);
+            grid-template-columns: repeat(5, 250px);
             grid-template-rows: minmax(185px, 1fr) 185px minmax(185px, 1fr) 185px;
             overflow-x: scroll;
         }
