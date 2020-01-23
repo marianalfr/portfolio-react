@@ -32,13 +32,38 @@
     
         }
 
+        &-wrapper{
+            width: 0px;
+            height: 0px;
+            border-radius: 100px;
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.233);
+            background-color: $color-background;
+            z-index: -10;
+            transition: all 0.8s;
+
+            @include media($tablet){
+                top: 20px;
+                right: 80px;
+            }
+        }
+
+        .show-wrapper{
+            width: 5000px;
+            height: 5000px;
+            border-radius: 5000px;
+            top: -2514px;
+            right: -2484px;
+        }
+
         &-menu{
-            width: 100%;
-            max-height: 0px;
             overflow:hidden;
             padding-right: 20px;
             position: absolute;
-            top: 80px;
+            top: 2620px;
+            left: 2345px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -47,8 +72,7 @@
             line-height: rem(80);
             font-weight: 300;
             background-color: $color-background;
-            transition: max-height 0.5s ease;
-            z-index: 200;
+            z-index: 2;
 
             @include media($tablet){
                 width: 300px;
@@ -56,8 +80,9 @@
                 font-size: rem(30);
                 line-height: rem(60);
                 position: absolute;
+                top: 2600px;
+                left: 2210px;
                 display: block;
-                right: 0px;
             }
 
             li{
@@ -74,13 +99,7 @@
         }
 
         .show-menu{
-            height: calc(100vh - 115px);
-            max-height: calc(100vh - 115px);
-
-            @include media($tablet){
-                height: 320px;
-                max-height: 320px;
-            }
+            opacity: 1;
         }
     }
 }
