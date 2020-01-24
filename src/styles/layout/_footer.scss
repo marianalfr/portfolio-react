@@ -66,22 +66,22 @@
 
                 &:first-child{
                     animation-name: show-dot;
-                    animation-duration: 1s;
-                    animation-delay: 3s;
+                    animation-duration: 0.5s;
+                    animation-delay: 1s;
                     animation-fill-mode: both;
                 }
     
                 &:nth-child(2){
                     animation-name: show-dot;
-                    animation-duration: 1s;
-                    animation-delay: 4s;
+                    animation-duration: 0.5s;
+                    animation-delay: 1.5s;
                     animation-fill-mode: both;
                 }
                 
                 &:last-child{
                     animation-name: show-dot;
-                    animation-duration: 1s;
-                    animation-delay: 5s;
+                    animation-duration: 0.5s;
+                    animation-delay: 2s;
                     animation-fill-mode: both;
                 }
             }
@@ -151,7 +151,7 @@
                 background-color: black;
                 animation-name: show-dot;
                 animation-duration: 1s;
-                animation-delay: 4s;
+                animation-delay: 2.5s;
                 animation-fill-mode: both;
 
                 @include media($tablet){

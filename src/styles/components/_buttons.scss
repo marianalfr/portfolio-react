@@ -48,7 +48,7 @@ button.dots {
           top:-10%;
           margin-top:0px;
           animation-name: show-dot;
-          animation-duration: 1s;
+          animation-duration: 0.5s;
           animation-delay: 0s;
           animation-fill-mode: both;
           
@@ -58,8 +58,8 @@ button.dots {
           bottom:-10%;
           margin-bottom:0px;
           animation-name: show-dot;
-          animation-duration: 1s;
-          animation-delay: 2s;
+          animation-duration: 0.5s;
+          animation-delay: 1s;
           animation-fill-mode: both;
         }
     
@@ -67,8 +67,8 @@ button.dots {
           top:50%;
           margin-top:-2px;
           animation-name: show-dot;
-          animation-duration: 1s;
-          animation-delay: 1s;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
           animation-fill-mode: both;
         }
     
