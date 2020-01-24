@@ -1,15 +1,18 @@
 import React from 'react';
 import '../styles/App.scss';
-import HeaderSp from './HeaderSp';
+import Header from './Header';
 import Footer from './Footer';
 
 
-class MarianaSp extends React.Component{
+class Mariana extends React.Component{
 
     render(){
         return(
             <React.Fragment>
-                <HeaderSp />
+                <Header 
+                    setLanguage={this.props.setLanguage}
+                    isLangSp={this.props.isLangSp}
+                />
                 <main className="main">
                     {this.props.children}
                 </main>
@@ -20,4 +23,4 @@ class MarianaSp extends React.Component{
     }
 }
 
-export default MarianaSp
+export default Mariana

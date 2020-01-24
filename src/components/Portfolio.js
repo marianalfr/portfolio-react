@@ -1,9 +1,8 @@
 import React from 'react';
 import projectsSp from '../data/projectsSp';
-import HeaderSp from './HeaderSp';
-import Footer from './Footer';
+import projectsEn from '../data/projectsEn';
 
-const PortfolioSp = () => {
+const Portfolio = props => {
 
     const renderProject = project => {
         return(
@@ -26,8 +25,12 @@ const PortfolioSp = () => {
         )
     };
 
-    const renderProjects = () => {
+    const renderProjectsSp = () => {
         return projectsSp.map(project => renderProject(project));
+    };
+
+    const renderProjectsEn = () => {
+        return projectsEn.map(project => renderProject(project));
     };
 
     return(
@@ -35,7 +38,13 @@ const PortfolioSp = () => {
             <section id="portfolio" className="portfolio">
                 <div className="portfolio__wrapper">
                     <ul id="project-list-es" className="portfolio__projects">
-                        {renderProjects()}
+                    { props.isLangSp ? 
+                            (
+                                renderProjectsSp()
+                            ) : (
+                                renderProjectsEn()
+                            )
+                        }
                     </ul>
                 </div>
             </section>
@@ -43,4 +52,4 @@ const PortfolioSp = () => {
     );
 };
 
-export default PortfolioSp;
+export default Portfolio;

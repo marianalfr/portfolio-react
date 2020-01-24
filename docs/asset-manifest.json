@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.ddeae8f5.chunk.css",
-    "main.js": "./static/js/main.7e2da9fd.chunk.js",
-    "main.js.map": "./static/js/main.7e2da9fd.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.59c71401.js",
-    "runtime-main.js.map": "./static/js/runtime-main.59c71401.js.map",
-    "static/js/2.9e979a24.chunk.js": "./static/js/2.9e979a24.chunk.js",
-    "static/js/2.9e979a24.chunk.js.map": "./static/js/2.9e979a24.chunk.js.map",
+    "main.css": "./static/css/main.76df178a.chunk.css",
+    "main.js": "./static/js/main.3a235366.chunk.js",
+    "main.js.map": "./static/js/main.3a235366.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.33b8f557.js",
+    "runtime-main.js.map": "./static/js/runtime-main.33b8f557.js.map",
+    "static/js/2.11eea428.chunk.js": "./static/js/2.11eea428.chunk.js",
+    "static/js/2.11eea428.chunk.js.map": "./static/js/2.11eea428.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.ad7af21fcbd30b1d6ea373f2eae84238.js": "./precache-manifest.ad7af21fcbd30b1d6ea373f2eae84238.js",
+    "precache-manifest.7aa159acdf334098d5b461b4f4f54e3f.js": "./precache-manifest.7aa159acdf334098d5b461b4f4f54e3f.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ddeae8f5.chunk.css.map": "./static/css/main.ddeae8f5.chunk.css.map",
-    "static/js/2.9e979a24.chunk.js.LICENSE": "./static/js/2.9e979a24.chunk.js.LICENSE",
+    "static/css/main.76df178a.chunk.css.map": "./static/css/main.76df178a.chunk.css.map",
+    "static/js/2.11eea428.chunk.js.LICENSE": "./static/js/2.11eea428.chunk.js.LICENSE",
     "static/media/Awesome-profile-cards-Mariana-Lerma.png": "./static/media/Awesome-profile-cards-Mariana-Lerma.43c9f40f.png",
     "static/media/Bel-And-Mums-Mariana-Lerma.png": "./static/media/Bel-And-Mums-Mariana-Lerma.e9e6b782.png",
     "static/media/CV-Mariana-Lerma.pdf": "./static/media/CV-Mariana-Lerma.86d3d370.pdf",
@@ -27,9 +27,9 @@
     "static/media/App.scss": "./static/media/m-l.16f59bfe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.59c71401.js",
-    "static/js/2.9e979a24.chunk.js",
-    "static/css/main.ddeae8f5.chunk.css",
-    "static/js/main.7e2da9fd.chunk.js"
+    "static/js/runtime-main.33b8f557.js",
+    "static/js/2.11eea428.chunk.js",
+    "static/css/main.76df178a.chunk.css",
+    "static/js/main.3a235366.chunk.js"
   ]
 }

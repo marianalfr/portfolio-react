@@ -3,15 +3,16 @@ import Logo from './Logo';
 import { Link } from 'react-router-dom';
 import Pdf from '../documents/CV-Mariana-Lerma.pdf';
 
-class HeaderSp extends React.Component {
+class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             menuOpen: false,
-            openSection: ''
+            openSection: 'home'
         };
         this.toggleMenu = this.toggleMenu.bind(this);
         this.openSection = this.openSection.bind(this);
+        this.setLanguage = this.setLanguage.bind(this);
     };
 
     toggleMenu(){
@@ -36,14 +37,18 @@ class HeaderSp extends React.Component {
         })
 
         this.toggleMenu();
+    }
 
-        console.log(target.id);
+    setLanguage(event){
+        this.props.setLanguage();
+        this.openSection(event);
     }
 
     render() {
+        console.log(this.state.openSection);
         return (
             <header className="header">
-                <Link to={this.state.openSection === 'home' ? "/" : "/es/inicio"}>
+                <Link to="/">
                     <div id="home" className="header__logo" onClick={this.openSection}>
                         <Logo/>
                     </div>
@@ -52,11 +57,12 @@ class HeaderSp extends React.Component {
                     <button id="btn-nav" className={`header__nav-button dots ${!this.state.menuOpen ? '' : ' on'}`} type="button" onClick={this.toggleMenu}><span></span></button>
                     <div className={`header__nav-wrapper ${!this.state.menuOpen ? '' : ' show-wrapper'}`}>
                         <ul id="nav" className={`header__nav-menu ${!this.state.menuOpen ? '' : ' show-menu'}`}>
-                            <Link to="/es/portfolio"><li id="portfolio" onClick={this.openSection}>Portfolio.</li></Link>
-                            <Link to="/es/sobre-mi"><li id="about" onClick={this.openSection}>Sobre mí.</li></Link>
+                            <Link to="/portfolio"><li id="portfolio" onClick={this.openSection}>Portfolio.</li></Link>
+                            <Link to="/about"><li id="about" onClick={this.openSection}>{this.props.isLangSp ? 'Sobre Mí.' : 'About me.'}</li></Link>
                             {/* <li id="skills" onClick={this.openSection}>Habilidades.</li> */}
-                            <a href = {Pdf} target = "_blank"><li id="skills" onClick={this.openSection}>CV.</li></a>
-                            <Link to="/es/contacto"><li id="contact" onClick={this.openSection}>Contacto.</li></Link>
+                            <a href = {Pdf} target = "_blank" rel="noopener noreferrer"><li id="skills" onClick={this.openSection}>CV.</li></a>
+                            <Link to="/contact"><li id="contact" onClick={this.openSection}>{this.props.isLangSp ? 'Contacto.' : 'Contact.'}</li></Link>
+                            <li id="language" onClick={this.setLanguage}>{this.props.isLangSp ? 'English.' : 'Español.'}</li>
                         </ul>
                     </div>
                 </nav>
@@ -65,4 +71,4 @@ class HeaderSp extends React.Component {
     };
 };
 
-export default HeaderSp;
+export default Header;
