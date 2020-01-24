@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c3b30ba840c9c4297fc9950e9d7e288",
+    "revision": "e0648fb102facd285d6a78be1cb4ed5c",
     "url": "./index.html"
   },
   {
-    "revision": "4ac52698d103b4200d34",
+    "revision": "6827c1749d715cc991ca",
     "url": "./static/css/main.0557435f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/2.11eea428.chunk.js.LICENSE"
   },
   {
-    "revision": "4ac52698d103b4200d34",
-    "url": "./static/js/main.3a235366.chunk.js"
+    "revision": "6827c1749d715cc991ca",
+    "url": "./static/js/main.c21d467a.chunk.js"
   },
   {
     "revision": "4ba141b406717de888a4",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/Bel-And-Mums-Mariana-Lerma.e9e6b782.png"
   },
   {
-    "revision": "86d3d370f38367773a4d2f21f32b7758",
-    "url": "./static/media/CV-Mariana-Lerma.86d3d370.pdf"
+    "revision": "c8202063c80b278bbc297feff999fff8",
+    "url": "./static/media/CV-Mariana-Lerma.c8202063.pdf"
   },
   {
     "revision": "def79a789d25efae7da23df441eef48a",
