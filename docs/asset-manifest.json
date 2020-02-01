@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.0557435f.chunk.css",
-    "main.js": "./static/js/main.d59fffe1.chunk.js",
-    "main.js.map": "./static/js/main.d59fffe1.chunk.js.map",
+    "main.css": "./static/css/main.7db05a0d.chunk.css",
+    "main.js": "./static/js/main.a2b3a000.chunk.js",
+    "main.js.map": "./static/js/main.a2b3a000.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.33b8f557.js",
     "runtime-main.js.map": "./static/js/runtime-main.33b8f557.js.map",
     "static/js/2.11eea428.chunk.js": "./static/js/2.11eea428.chunk.js",
     "static/js/2.11eea428.chunk.js.map": "./static/js/2.11eea428.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.1ad11771d6cceb4c3b3df1a291d0e765.js": "./precache-manifest.1ad11771d6cceb4c3b3df1a291d0e765.js",
+    "precache-manifest.cefe986cd19e55da14f99d3221563f77.js": "./precache-manifest.cefe986cd19e55da14f99d3221563f77.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.0557435f.chunk.css.map": "./static/css/main.0557435f.chunk.css.map",
+    "static/css/main.7db05a0d.chunk.css.map": "./static/css/main.7db05a0d.chunk.css.map",
     "static/js/2.11eea428.chunk.js.LICENSE": "./static/js/2.11eea428.chunk.js.LICENSE",
     "static/media/Awesome-profile-cards-Mariana-Lerma.png": "./static/media/Awesome-profile-cards-Mariana-Lerma.43c9f40f.png",
     "static/media/Bel-And-Mums-Mariana-Lerma.png": "./static/media/Bel-And-Mums-Mariana-Lerma.e9e6b782.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.33b8f557.js",
     "static/js/2.11eea428.chunk.js",
-    "static/css/main.0557435f.chunk.css",
-    "static/js/main.d59fffe1.chunk.js"
+    "static/css/main.7db05a0d.chunk.css",
+    "static/js/main.a2b3a000.chunk.js"
   ]
 }
