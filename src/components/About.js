@@ -4,7 +4,7 @@ class About extends React.Component{
 
     render(){
         return(
-            <main className="main">
+            <React.Fragment>
                 { this.props.isLangSp ? 
                     (
                         <section id="about" className="about">
@@ -51,7 +51,7 @@ class About extends React.Component{
                     )
                 }
                 
-            </main>
+            </React.Fragment>
         )
     }
 };

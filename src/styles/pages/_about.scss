@@ -3,22 +3,26 @@
     height: calc(100vh - 180px);
     margin-top: 120px;
     overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     padding-left: 20px;
 
     @include media($tablet){
         height: calc(100vh - 250px);
         margin-top: 180px;
         padding-left: 50px;
+        display: flex;
+        justify-content: center;
         justify-content: flex-start;
     }
 
 
     &__text{
         width: 280px;
+        margin-top: 50px;
         margin-right: 20px;
+
+        @include media($tablet){
+            margin-top: 0;
+        }    
 
         h2{
             font-size: rem(18);
